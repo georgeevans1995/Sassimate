@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animate.css</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, minimal-ui">
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//code.jquery.com">
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/sassimate.min.css">
+    <script src="/javascript/sassimate.min.js"></script>
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="display-wrapper">
+            <p class="display animation-display">SASSimate Me!</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="hidden style">&nbsp;</div>
+        <form class="animation-generator">
+            <div class="row">
+                <label for="title">Animation Name</label>
+                <div class="select-wrapper">
+                    <select class="select" id="animation" name="animation">
+                        <option value="">Please select animation</option>
+                        <option value="bounce">bounce</option>
+                        <option value="bounceIn">bounceIn</option>
+                        <option value="bounceInLeft">bounceInLeft</option>
+                        <option value="bounceInRight">bounceInRight</option>
+                        <option value="bounceInUp">bounceInUp</option>
+                        <option value="bounceInDown">bounceInDown</option>
+                        <option value="bounceOut">bounceOut</option>
+                        <option value="bounceOutUp">bounceOutUp</option>
+                        <option value="bounceOutDown">bounceOutDown</option>
+                        <option value="bounceOutLeft">bounceOutLeft</option>
+                        <option value="bounceOutRight">bounceOutRight</option>
+                        <option value="fadeIn">fadeIn</option>
+                        <option value="fadeInUp">fadeInUp</option>
+                        <option value="fadeInDown">fadeInDown</option>
+                        <option value="fadeInLeft">fadeInLeft</option>
+                        <option value="fadeInRight">fadeInRight</option>
+                        <option value="fadeOut">fadeOut</option>
+                        <option value="fadeOutDown">fadeOutDown</option>
+                        <option value="fadeOutUp">fadeOutUp</option>
+                        <option value="fadeOutLeft">fadeOutLeft</option>
+                        <option value="fadeOutRight">fadeOutRight</option>
+                        <option value="fadeInUpBig">fadeInUpBig</option>
+                        <option value="fadeInDownBig">fadeInDownBig</option>
+                        <option value="fadeInRightBig">fadeInRightBig</option>
+                        <option value="fadeInLeftBig">fadeInLeftBig</option>
+                        <option value="fadeOutUpBig">fadeOutUpBig</option>
+                        <option value="fadeOutDownBig">fadeOutDownBig</option>
+                        <option value="fadeOutRightBig">fadeOutRightBig</option>
+                        <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                        <option value="flash">flash</option>
+                        <option value="flip">flip</option>
+                        <option value="flipInX">flipInX</option>
+                        <option value="flipInY">flipInY</option>
+                        <option value="flipOutY">flipOutY</option>
+                        <option value="flipOut">flipOut</option>
+                        <option value="hinge">hinge</option>
+                        <option value="jello">jello</option>
+                        <option value="lightSpeedIn">lightSpeedIn</option>
+                        <option value="lightSpeedOut">lightSpeedOut</option>
+                        <option value="pulse">pulse</option>
+                        <option value="rollIn">rollIn</option>
+                        <option value="rollOut">rollOut</option>
+                        <option value="rotateIn">rotateIn</option>
+                        <option value="rotateInUpLeft">rotateInUpLeft</option>
+                        <option value="rotateInUpRight">rotateInUpRight</option>
+                        <option value="rotateInDownLeft">rotateInDownLeft</option>
+                        <option value="rotateInDownRight">rotateInDownRight</option>
+                        <option value="rotateOut">rotateOut</option>
+                        <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+                        <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+                        <option value="rotateOutDownRight">rotateOutDownRight</option>
+                        <option value="rubberBand">rubberBand</option>
+                        <option value="shake">shake</option>
+                        <option value="slideInUp">slideInUp</option>
+                        <option value="slideInDown">slideInDown</option>
+                        <option value="slideInLeft">slideInLeft</option>
+                        <option value="slideInRight">slideInRight</option>
+                        <option value="slideOutUp">slideOutUp</option>
+                        <option value="slideOutLeft">slideOutLeft</option>
+                        <option value="slideOutDown">slideOutDown</option>
+                        <option value="slideOutRight">slideOutRight</option>
+                        <option value="swing">swing</option>
+                        <option value="tada">tada</option>
+                        <option value="wobble">wobble</option>
+                        <option value="zoomIn">zoomIn</option>
+                        <option value="zoomInUp">zoomInUp</option>
+                        <option value="zoomInDown">zoomInDown</option>
+                        <option value="zoomInLeft">zoomInLeft</option>
+                        <option value="zoomInRight">zoomInRight</option>
+                        <option value="zoomOut">zoomOut</option>
+                        <option value="zoomOutUp">zoomOutUp</option>
+                        <option value="zoomOutDown">zoomOutDown</option>
+                        <option value="zoomOutLeft">zoomOutLeft</option>
+                        <option value="zoomOutRight">zoomOutRight</option>
+                    </select>
+                </div>
+                <span class="helper">Please select your title</span>
+            </div>
+
+            <div class="row">
+                <label for="title">Iterations</label>
+                <div class="select-wrapper">
+                    <select class="select" id="iterations" name="iterations">
+                        <option value="">Please select number of iterations</option>
+                        <option value="1 ">1</option>
+                        <option value="2 ">2</option>
+                        <option value="3 ">3</option>
+                        <option value="4 ">4</option>
+                        <option value="5 ">5</option>
+                        <option value="6 ">6</option>
+                        <option value="7 ">7</option>
+                        <option value="8 ">8</option>
+                        <option value="9 ">9</option>
+                        <option value="10 ">10</option>
+                        <option value="infinite ">infinite</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">Duration(s)
+                <input class="input" id="duration">
+            </div>
+            <div class="row">Strength
+                <input class="range" max="100" min="1" name="points" type="range">
+            </div>
+            <div class="row"><a class="button submit" id="submit" name="B1" type="submit">SASSimate it!</a></div>
+        </form>
+
+        <p class="mixin-wrapper">&nbsp;</p>
+
+</body>
+
+</html>
