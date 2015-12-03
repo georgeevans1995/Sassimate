@@ -1951,7 +1951,8 @@ body {
 	font-family: 'Grand Hotel', cursive;
 	font-size: 4.8rem;
 	color: #48CFAE;
-	margin: 0;
+	margin: auto;
+	width: 250px;
 	margin-top: calc((300px - 106px) / 2);
 }
 
