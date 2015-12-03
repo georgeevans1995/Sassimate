@@ -20,7 +20,7 @@ $(document).ready(function() {
       var animationName = animationSelected + '100';
       var ss = document.styleSheets;
         //add element for animation to the page
-        $('.display-wrapper').html('<p class="display animation-display">Animate Me!</p>');
+        $('.display-wrapper').html('<p class="display animation-display">Sassimate!</p>');
         //create the sass mixin and append to the page
         $('.display').addClass(iterations).addClass(animationSelected).addClass(strength+animationName).attr('id', animationSelected).show();
           $('.mixin-wrapper').text(" @include animate(" + animationSelected + ", " + duration + "s, $strength: "+ strength +", $iteration: " + iterations + ")");
