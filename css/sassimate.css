@@ -1920,11 +1920,12 @@ form .captcha-wrapper img {
 	color: #48CFAE;
 }
 
-.animations p.mixin-wrapper {
+p.mixin-wrapper {
 	display: block;
 	font-size: 1rem;
 	font-weight: normal;
 	color: #fff;
+	text-align: center;
 }
 
 html,
