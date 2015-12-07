@@ -155,7 +155,8 @@ $('.submit').click(function() {
     $('.display').addClass(iterations).addClass(animationSelected).attr('id', animationSelected);
 
     //create the sass mixin with variables and append to the page
-    $('.mixin-wrapper').text(" @include animate(" + animationSelected + ", " + duration + "s, $strength: "+ strength +", $iteration: " + iterations + ")");
+    $('.variables').text(" @include animate($animation-name: " + animationSelected + ", $duration: " + duration + "s, $strength: "+ strength +", $iteration: " + iterations + ")");
+    $('.mixin-wrapper').text(" @include animate(" + animationSelected + "," + duration + "s,"+ strength +"," + iterations + ")");
 
   //change css properties to change our animation duration iterations and name
   $('.display').css({
