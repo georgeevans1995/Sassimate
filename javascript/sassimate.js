@@ -145,6 +145,9 @@ $('.submit').click(function() {
     var iterations = $('#iterations').val();
     var animationSelected = $('#animation').val();
     var duration = $('#duration').val();
+    if(duration.length == 0) {
+        duration = 1;
+    }
     var strength = $('.range').val();
     var animationName = animationSelected + '100';
 
@@ -156,7 +159,7 @@ $('.submit').click(function() {
 
     //create the sass mixin with variables and append to the page
     $('.variables').text(" @include animate($animation-name: " + animationSelected + ", $duration: " + duration + "s, $strength: "+ strength +", $iteration: " + iterations + ")");
-    $('.mixin-wrapper').text(" @include animate(" + animationSelected + "," + duration + "s,"+ strength +"," + iterations + ")");
+    $('.mixin-wrapper').html(" <span class='include'>@include</span>  animate(<span class='string'>" + animationSelected + "</span>, <span class='string'>" + duration + "s</span>, <span class='int'>"+ strength +"</span>, <span class='int'>" + iterations + "</span>)");
 
   //change css properties to change our animation duration iterations and name
   $('.display').css({

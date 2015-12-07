@@ -1926,11 +1926,35 @@ p {
 	color: #48CFAE;
 }
 
-p.mixin-wrapper {
+p.variables {
 	display: block;
 	font-size: 1rem;
 	font-weight: normal;
 	color: #fff;
+}
+
+p.mixin-wrapper {
+	display: block;
+	background: #FBFCFC;
+	padding: 1rem;
+	font-size: 1rem;
+	font-weight: normal;
+	color: #111;
+	width: 40%;
+	border-radius: 10px;
+	margin: auto;
+}
+
+p.mixin-wrapper .include {
+	color: #A66BBE;
+}
+
+p.mixin-wrapper .string {
+	color: #48CFAE;
+}
+
+p.mixin-wrapper .int {
+	color: #3498DB;
 }
 
 html,
