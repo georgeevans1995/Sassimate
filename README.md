@@ -6,6 +6,7 @@ Sass mixin for dynamic animations<br>
 1. Download sassimate.zip and add the enclosed files to your project in your sass folder<br>
 2. Go to animation.scss and change the file paths to wherever you have put the files.<br>
 3. Run gulp on your project<br>
+Please note: if you know you are not using certain animations please feel free to get rid of references to them. However due to using mixins only the keyframes you call are compiled into your css file.
 
 #Usage
 The mixin is called with 4 arguments<br>
