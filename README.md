@@ -57,3 +57,8 @@ https://georgeevans1995.github.io/Sassimate<br>
 #Credits
 All animations have originated from the animate.css Library! To check this project out go to:
 https://daneden.github.io/animate.css/
+
+#Contribute
+If you come up with any more awesome animations I would love to see them! Please set up a codepen of fiddle of some sort as a demo so that I can se them. Please use pull requests for any suggestions on improving sassimate. I will review them as quick as possible. 
+
+
