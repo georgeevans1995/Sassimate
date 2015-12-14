@@ -61,4 +61,5 @@ https://daneden.github.io/animate.css/
 #Contribute
 If you come up with any more awesome animations I would love to see them! Please set up a codepen of fiddle of some sort as a demo so that I can se them. Please use pull requests for any suggestions on improving sassimate. I will review them as quick as possible. 
 
-
+#License
+sassimate is licensed under the MIT license. (http://opensource.org/licenses/MIT)
