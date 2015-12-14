@@ -16,32 +16,35 @@ The mixin is called with 4 arguments<br>
 4. $iterations (optional, defaults to 1)<br>
 
 Calling an animation works like this<br>
-
-p{<br>
-    @include sassimate($animation-name: bounce, $duration: 1s, $strength: 50, $iterations: 2);<br>
-}<br>
-
+```sass
+p{
+    @include sassimate($animation-name: bounce, $duration: 1s, $strength: 50, $iterations: 2);
+}
+```
 Or in shorthand<br>
-
-p {<br>
-    @include sassimate(bounce, 1s, 50, 2);<br>
-}<br>
-
+```sass
+p {
+    @include sassimate(bounce, 1s, 50, 2);
+}
+```
 #Adding your own animations
 1. Add the file to the animations folder with your keyframe in there.<br>
 2. make sure the name of the file and the name of the keyframe match.<br>
 3. go to the animations.scss file and add @import 'fill-path/animation/newfilename';<br>
 4. also add to the @if/else statement :<br>
-@elseif $name == newAnimationName {<br>
-  @include newAnimationName($strength);<br>
-}<br>
-
+```sass
+@elseif $name == newAnimationName {
+  @include newAnimationName($strength);
+}
+```
 5. Do any maths to the mixin to allow the strength to work. If yo aren't bothered by strength then add do this:<br>
-    @mixin newAnimationName($strength:100){<br>
-        @-webkit-keyframes newAnimationName#{$strength} {<br>
-              //keyframe stuff<br>
-        }<br>
-    }<br>
+```sass
+    @mixin newAnimationName($strength:100){
+        @-webkit-keyframes newAnimationName#{$strength} {
+              //keyframe stuff
+        }
+    }
+```
 and always call the animation using strength 100 to avoid creating multiple keyframes<br>
 
 
