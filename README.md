@@ -37,7 +37,7 @@ p {
   @include newAnimationName($strength);
 }
 ```
-5. Do any maths to the mixin to allow the strength to work. If yo aren't bothered by strength then add do this:<br>
+Do any maths to the mixin to allow the strength to work. If yo aren't bothered by strength then add do this:<br>
 ```sass
     @mixin newAnimationName($strength:100){
         @-webkit-keyframes newAnimationName#{$strength} {
